@@ -1,0 +1,41 @@
+Goya Santiago - 50022
+
+########################################### EJERCICIO 1 ###########################################
+
+1. Ventajas de HTML 5
+
+1. Soporte multimedia: HTML5 permite la integración directa de audio y video sin necesidad de plugins adicionales.
+2. Interactividad: Con HTML5, puedes crear aplicaciones web más interactivas y dinámicas gracias a las nuevas APIs y elementos como el canvas.
+3. Compatibilidad multiplataforma**: Funciona en una amplia variedad de dispositivos y navegadores, lo que asegura una experiencia consistente para los usuarios².
+4. Mejor rendimiento: Optimiza el tiempo de carga de las páginas web, lo que mejora la experiencia del usuario.
+5. SEO-Friendly: Un HTML5 bien estructurado puede mejorar la visibilidad de un sitio web en los motores de búsqueda.
+6. Seguridad: Ofrece mejores mecanismos para proteger la información del sitio web.
+
+
+2. ¿Por qué utilizarlo?
+
+Utilizar HTML5 tiene varias razones convincentes:
+
+1. Estandarización: HTML5 es el estándar actual para el desarrollo web, lo que asegura que tu sitio o aplicación esté alineado con las mejores prácticas y tecnologías más recientes.
+2. Accesibilidad: Mejora la accesibilidad para usuarios con discapacidades, gracias a sus nuevas etiquetas semánticas que facilitan la navegación con lectores de pantalla.
+3. Desarrollo más sencillo: Las nuevas características y APIs de HTML5 simplifican el desarrollo de aplicaciones web complejas sin necesidad de plugins externos.
+4. Mejor experiencia de usuario: Con soporte nativo para multimedia y gráficos, puedes ofrecer una experiencia más rica y atractiva a tus usuarios.
+5. Compatibilidad futura: Al ser el estándar más reciente, HTML5 asegura que tu sitio web esté preparado para futuras actualizaciones y tecnologías.
+
+
+########################################### EJERCICIO 2 ###########################################
+
+1. ¿Qué formatos soporta?
+
+Audio
+- MP3: El formato más popular para música y audio grabado.
+- AAC: Utilizado en dispositivos Apple y ampliamente soportado.
+- Ogg Vorbis: Un formato de audio libre y abierto.
+
+
+########################################### EJERCICIO 3 ###########################################
+
+Video
+- MP4: Es el formato más recomendado y ampliamente soportado por todos los navegadores.
+- WebM: Desarrollado por Google, es compatible con la mayoría de los navegadores modernos.
+- Ogg: Un formato abierto y libre de patentes, también soportado por HTML5.

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Alta Ciudad</title>
+</head>
+<body>
+    <FORM action="alta.php" method="POST" name="FormAlta">
+        <TABLE width="225">
+        <TR> 
+       <TD> Ciudad:</TD>
+        <TD> <input type="TEXT" name="ciudad" size="20" maxlength="40"> 
+        </TR>
+        <TR> 
+        <TD> Pais:</TD>
+        <TD> <input type="TEXT" name="pais" size="20" maxlength="40"> </TD>
+        </TR>
+        <TR> 
+        <TD> Habitantes: </TD>
+        <TD> <input type="number" name="habitantes" size="20"></TD>
+        </TR>
+        <TR> 
+        <TD> Superficie: </TD>
+        <TD> <INPUT TYPE="number" name="superficie" size="20"> </TD>
+        </TR>
+        <TR>
+            <TD>
+                Metro:
+            </TD>
+            <TD>
+                <label>Tiene metro?</label><br><br>
+                <input type="radio" name="metro" value="1">
+                <label for="metro">Sí</label><br><br>
+                <input type="radio" name="metro" value="0">
+                <label for="metro">No</label><br><br>
+            </TD>
+        </TR>
+        <TR> 
+        <TD colspan="2" align="center"> <INPUT TYPE="SUBMIT" name="Submit" value="Agregar">
+        <p><a href="Menu.html">Volver al menu del ABM</a></p> 
+        </TD>
+        </TR>
+        </TABLE>
+       </FORM>
+</body>
+</html>

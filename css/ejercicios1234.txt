@@ -1,0 +1,196 @@
+########################################### EJERCICIO 1 ###########################################
+
+1.¿ Qué es CSS y para qué se usa?
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados? 
+Ejemplifique cada uno.
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+6. ¿ Qué es la herencia?
+7. ¿ En qué consiste el proceso denominado cascada?
+
+
+1) Las Hojas de Estilo en Cascada (Cascading Style Sheets) es una tecnología que nos permite controlar la apariencia de una página web. Es un mecanismo simple que describe cómo se va a mostrar un documento en la pantalla, o cómo se va a imprimir, o incluso cómo va a ser pronunciada la información presente en ese documento a través de un dispositivo de lectura. Esta forma de descripción de estilos ofrece a los desarrolladores el control total sobre estilo y formato de sus documentos. 
+
+2) Podemos asociar las reglas de estilo a las marcas HTML de tres maneras:
+• directamente a la marca, 
+• en el head de la página 
+• o agrupar las reglas de estilo en un archivo independiente con extensión *.css
+
+3) En un documento HTML o página, se puede definir la forma:
+• En un pequeño trozo de código en la cabecera, a toda la página.
+• Una porción del documento, aplicando estilos visibles en un trozo de la página.
+• Una etiqueta en concreto, llegando incluso a poder definir varios estilos diferentes para una sola etiqueta.
+
+4) Los más utilizados son los selectores de elemento, clase e identificador
+
+selector de elemento:
+h1 {color: red;}
+
+selector de clase:
+.rectangulo {color: red;}
+
+selector de identificador:
+#contenedor {color: red;}
+
+5) Una pseudo-clase en CSS es una palabra clave que se añade a un selector y que especifica un estado especial del elemento seleccionado. Las pseudo-clases permiten aplicar estilos a un elemento no solo en relación con el contenido del documento, sino también en relación a factores externos como la interacción del usuario.
+
+Las pseudo-clases más utilizadas aplicadas a vínculos son:
+
+1. link: Se aplica a los enlaces que aún no han sido visitados.
+2. visited: Se aplica a los enlaces que ya han sido visitados.
+3. hover: Se aplica cuando el usuario pasa el cursor sobre el enlace.
+4. active: Se aplica mientras el enlace está siendo activado, por ejemplo, durante el clic.
+5. :focus: Se aplica cuando el enlace tiene el foco, como cuando se navega con el teclado.
+
+6) En CSS, la herencia es un concepto que permite que ciertos estilos aplicados a un elemento padre se transmitan automáticamente a sus elementos hijos. Esto significa que los elementos hijos pueden heredar las propiedades de estilo de sus elementos padres, lo que facilita la consistencia y la gestión de estilos en una página web.
+
+7) El proceso de cascada determina cuál de las múltiples reglas aplicadas a un elemento debe prevalecer, teniendo en cuenta el origen del estilo, la especificidad de los selectores, la importancia (!important) y el orden en que se escriben las reglas. Esto permite a los diseñadores web escribir estilos que puedan ser fácilmente sobreescritos o priorizados según sea necesario.
+
+
+########################################### EJERCICIO 2 ###########################################
+
+Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto
+
+#normal {
+font-family: arial,helvetica;
+font-size: 11px;
+font-weight: bold;
+}
+
+Selector: p#normal selecciona el elemento <p> con el id="normal".
+Declaraciones:
+    font-family: arial, helvetica; establece la fuente del texto a Arial o Helvetica.
+    font-size: 11px; establece el tamaño de la fuente a 11 píxeles.
+    font-weight: bold; establece el peso de la fuente a negrita.
+Efecto: 
+    <p id="normal">Este es un párrafo</p>: Este párrafo tendrá texto en Arial o Helvetica, de 11 píxeles y en negrita.
+
+*#destacado {
+border-style: solid;
+border-color: blue;
+border-width: 2px;
+}
+
+Selector: *#destacado selecciona cualquier elemento con el id="destacado".
+Declaraciones:
+border-style: solid; establece el estilo del borde a sólido.
+border-color: blue; establece el color del borde a azul.
+border-width: 2px; establece el ancho del borde a 2 píxeles.
+Efecto: 
+    <p id="destacado">Este es otro párrafo</p>: Este párrafo tendrá un borde sólido, azul y de 2 píxeles de ancho.
+    <table id="destacado"><tr><td>Esta es una tabla</td></tr></table>: Esta tabla también tendrá un borde sólido, azul y de 2 píxeles de ancho.
+
+
+#distinto {
+background-color: #9EC7EB;
+color: red;
+}
+
+Selector: #distinto selecciona cualquier elemento con el id="distinto".
+Declaraciones:
+background-color: #9EC7EB; establece el color de fondo a un tono azul claro.
+color: red; establece el color del texto a rojo.
+Efecto: 
+    <p id="distinto">Este es el último párrafo</p>: Este párrafo tendrá un fondo azul claro y texto rojo.
+
+
+########################################### EJERCICIO 3 ###########################################
+Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto
+
+p.quitar {
+color: red;
+}
+
+Selector: p.quitar selecciona los elementos <p> con la clase quitar.
+Declaración: color: red; establece el color del texto a rojo.
+Efecto: 
+    <p class="quitar">: Este párrafo tendrá texto rojo.
+    <h1 class="quitar">: Este encabezado tendrá texto rojo.
+
+
+*.desarrollo {
+font-size: 8px;
+}
+
+Selector: *.desarrollo selecciona cualquier elemento con la clase desarrollo.
+Declaración: font-size: 8px; establece el tamaño de la fuente a 8 píxeles.
+Efecto:
+    <p class="desarrollo">: Este párrafo tendrá un tamaño de fuente de 8 píxeles.
+
+
+.importante {
+font-size: 20px;
+}
+
+Selector: .importante selecciona cualquier elemento con la clase importante.
+Declaración: font-size: 20px; establece el tamaño de la fuente a 20 píxeles.
+Efecto:
+    <p class="importante">: Este párrafo tendrá un tamaño de fuente de 20 píxeles.
+    <p class="quitar importante">: Este párrafo tendrá texto rojo y un tamaño de fuente de 20 píxeles, ya que se aplican ambas clases.
+
+
+
+########################################### EJERCICIO 4 ###########################################
+Dadas las siguientes declaraciones:
+
+* {color:green; }
+a:link {color:gray }
+a:visited{color:blue }
+a:hover {color:fuchsia }
+a:active {color:red }
+p {font-family: arial,helvetica;font-size: 10px;color:black; }
+.contenido{font-size: 14px;font-weight: bold; }
+
+Analizar los siguientes códigos y comparar sus efectos. Explicar.
+
+<body>
+    <p class="contenido" style="font-weight: normal;">
+    Este es un texto ...............</p>
+    <table>
+        <tr>
+            <td>Y esta es una tabla.......</td>
+        </tr>
+        <tr>
+            <td><a href="http://www.google.com.ar">con un enlace</a></td>
+        </tr>
+    </table>
+</body>
+
+<p class="contenido" style="font-weight: normal;">:
+    Clase contenido: Aplica font-size: 14px; y font-weight: bold;.
+    Estilo en línea: Sobrescribe font-weight: bold; con font-weight: normal;.
+    Resultado: El párrafo tendrá un tamaño de fuente de 14 píxeles y peso de fuente normal (no negrita), con texto en negro debido a la regla p { color: black; }.
+
+<a href="http://www.google.com.ar">con un enlace</a>:
+    Estado del enlace: Dependiendo del estado (link, visited, hover, active), el color del enlace cambiará entre gris, azul, fucsia y rojo.
+    Regla global: La regla * { color: green; } no afecta a los enlaces debido a las reglas específicas para los estados de los enlaces.
+
+
+<body class="contenido">
+    <p> Este es un texto................</p>
+    <table>
+        <tr>
+            <td>Y esta es una tabla.......</td>
+        </tr>
+        <tr>
+            <td><a href="http://www.google.com.ar">con un enlace</a></td>
+        </tr>
+    </table>
+</body>
+
+<body class="contenido">:
+    Clase contenido: Aplica font-size: 14px; y font-weight: bold; a todos los elementos dentro del <body>.
+    Resultado: Todos los elementos dentro del <body> heredarán font-size: 14px; y font-weight: bold;.
+    <p>:
+    Herencia: El párrafo heredará font-size: 14px; y font-weight: bold; del <body>.
+    Regla específica: La regla p { font-size: 10px; color: black; } sobrescribirá el tamaño de fuente a 10 píxeles y el color a negro.
+    Resultado: El párrafo tendrá un tamaño de fuente de 10 píxeles, peso de fuente en negrita y texto en negro.
+
+<a href="http://www.google.com.ar">con un enlace</a>:
+    Estado del enlace: Igual que en el primer bloque, el color del enlace cambiará según su estado.
+
+Comparación de efectos
+
+Primer Bloque: El párrafo con la clase contenido tendrá un tamaño de fuente de 14 píxeles y peso de fuente normal debido al estilo en línea. Los enlaces cambiarán de color según su estado.
+Segundo Bloque: Todos los elementos dentro del <body> heredarán font-size: 14px; y font-weight: bold;, pero el párrafo tendrá un tamaño de fuente de 10 píxeles y peso de fuente en negrita debido a la regla específica para p.

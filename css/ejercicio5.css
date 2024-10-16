@@ -1,0 +1,37 @@
+.enfatizados {
+    color: red;
+}
+
+div p a[href]{
+    color: black
+}
+
+#ultimo ul li{
+    color: yellow;
+}
+
+#ultimo ul li a{
+    color: blue;
+}
+
+#importante{
+    color: green;
+}
+
+h1,h2,h3,h4,h5,h6 #importante{
+    color: red;
+}
+
+h1[title]{
+    color:blue;
+}
+
+ol li a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+ol li a:visited{
+    color:violet;
+    text-decoration: none;
+}

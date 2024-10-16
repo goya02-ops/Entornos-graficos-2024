@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendar a un Amigo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recomendar a un Amigo</h1>
+    </header>
+    <section>
+        <form action="send_recommendation.php" method="post">
+            <label for="tu_nombre">Tu Nombre:</label>
+            <input type="text" id="tu_nombre" name="tu_nombre" required>
+            
+            <label for="tu_email">Tu Email:</label>
+            <input type="email" id="tu_email" name="tu_email" required>
+            
+            <label for="amigo_nombre">Nombre de tu Amigo:</label>
+            <input type="text" id="amigo_nombre" name="amigo_nombre" required>
+            
+            <label for="amigo_email">Email de tu Amigo:</label>
+            <input type="email" id="amigo_email" name="amigo_email" required>
+            
+            <input type="submit" value="Enviar Recomendación">
+        </form>
+    </section>
+</body>
+</html>
